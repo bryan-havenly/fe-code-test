@@ -1,0 +1,22 @@
+module.exports = `
+
+schema {
+  query: Query
+}
+
+type Query {
+  designers: [Designer]
+}
+
+type Designer {
+  created: String!
+  designCount: Int!
+  displayName: String!
+  email: String!
+  firstName: String!
+  id: ID!
+  photo: String!
+  vanityId: String!
+}
+
+`;

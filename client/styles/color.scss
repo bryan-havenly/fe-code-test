@@ -1,0 +1,29 @@
+$colors: (
+  // common
+  White          : #fff,
+  Black          : #000,
+
+  // primary
+  Mirage         : #1c2233,
+  SlateGray      : #738494,
+
+  // secondary
+  RoyalBlue      : #3e78f1,
+
+  // tertiary
+  Bridesmaid     : #fae4de,
+  Linen          : #faefe6,
+  LightLinen     : #fdf7f5,
+
+  // neutral
+  WildSand       : #f6f6f6,
+  Silver         : #cccccc,
+);
+
+@function color($name, $rgba: false) {
+  @if $rgba == false {
+    @return map-get($colors, $name);
+  } @else {
+    @return rgba(map-get($colors, $name), $rgba);
+  }
+}

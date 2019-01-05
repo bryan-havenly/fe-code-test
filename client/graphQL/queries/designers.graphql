@@ -1,0 +1,7 @@
+#import "graphQL/fragments/designerFields.graphql"
+
+query designers {
+  designers {
+    ...designerFields
+  }
+}

@@ -1,0 +1,9 @@
+fragment designerFields on Designer {
+  created
+  designCount
+  displayName
+  firstName
+  id
+  photo
+  vanityId
+}

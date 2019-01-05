@@ -1,0 +1,7 @@
+.Root {
+  padding: 20px;
+
+  @include min-width(tablet) {
+    padding: 60px;
+  }
+}
