@@ -1,0 +1,47 @@
+.DesignerPhoto {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+  height: 100px;
+  margin: 0 auto 15px auto;
+  position: relative;
+  width: 100px;
+}
+
+.Heart {
+  @include reset;
+  font-size: 20px;
+  left: -33px;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &:hover {
+    &:not(.isFavorite) path {
+      fill: color(PinterestRed, 0.3);
+    }
+  }
+
+  path:last-of-type {
+    stroke: color(black);
+  }
+
+  &.isFavorite path {
+    fill: color(PinterestRed);
+  }
+}
+
+.Name {
+  color: color(Mirage);
+  margin-bottom: 25px;
+  text-align: center;
+  width: 100%;
+}
+
+.Button {
+  margin-bottom: 20px;
+  padding: 0 30px;
+}

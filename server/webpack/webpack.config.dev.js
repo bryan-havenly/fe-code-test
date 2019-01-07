@@ -67,7 +67,13 @@ module.exports = {
             }
           }
         ]
-      }
+      },
+      {
+        test : /\.svg$/,
+        use  : [
+          'raw-loader',
+        ],
+      },
     ]
   },
   plugins: [],
@@ -75,7 +81,7 @@ module.exports = {
     alias: {
       client : path.resolve(rootPath, 'client')
     },
-    extensions: ['.js', '.scss', '.graphql'],
+    extensions: ['.js', '.scss', '.graphql', '.svg'],
     modules: [
       path.resolve(rootPath, 'client'),
       'node_modules'

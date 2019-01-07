@@ -1,7 +1,21 @@
 .Root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 20px;
 
   @include min-width(tablet) {
     padding: 60px;
   }
+}
+
+.SortSection {
+  select {
+    font-size: 16px;
+    height: 60px;
+    width: 300px;
+  }
+}
+
+.DesignerSection {
 }

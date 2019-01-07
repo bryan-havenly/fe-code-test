@@ -9,12 +9,13 @@ type Query {
 }
 
 type Designer {
+  availability: Int!
   created: String!
-  designCount: Int!
+  designPhoto: String!
   displayName: String!
   email: String!
-  firstName: String!
   id: ID!
+  isFavorite: Boolean!
   photo: String!
   vanityId: String!
 }

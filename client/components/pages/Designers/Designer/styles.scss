@@ -1,0 +1,30 @@
+.Root {
+  box-shadow: 0 2px 9px 0 color(Black, 0.1);
+  display: inline-flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  margin: 20px 20px 0 0;
+  max-width: 700px;
+  min-height: 375px;
+  padding: 20px;
+  width: calc(50% - 70px);
+}
+
+.DesignerWrap {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  width: 30%;
+}
+
+.CarouselWrap {
+  overflow: hidden;
+  position: relative;
+  width: 70%;
+}
+
+.Image {
+  display: block;
+}

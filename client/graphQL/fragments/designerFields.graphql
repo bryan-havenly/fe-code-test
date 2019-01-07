@@ -1,9 +1,10 @@
 fragment designerFields on Designer {
+  availability
   created
-  designCount
+  designPhoto
   displayName
-  firstName
   id
+  isFavorite
   photo
   vanityId
 }

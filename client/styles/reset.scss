@@ -1,0 +1,16 @@
+@mixin reset() {
+  // clears textarea and select styles, prevents zoom in ios safari
+  -webkit-appearance: none;
+
+  background: none;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  letter-spacing: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-transform: none;
+  vertical-align: baseline;
+}

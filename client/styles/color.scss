@@ -18,6 +18,8 @@ $colors: (
   // neutral
   WildSand       : #f6f6f6,
   Silver         : #cccccc,
+
+  PinterestRed   : #c92228,
 );
 
 @function color($name, $rgba: false) {

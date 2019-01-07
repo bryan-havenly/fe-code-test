@@ -19,6 +19,7 @@
   "homepage": "https://github.com/potterbm/fwi-code-challenge#readme",
   "dependencies": {
     "axios": "^0.18.0",
+    "classnames": "^2.2.6",
     "graphql": "^14.0.2",
     "graphql-tools": "^4.0.3",
     "immutable": "^4.0.0-rc.12",
@@ -50,6 +51,7 @@
     "css-loader": "^2.0.1",
     "jest": "^23.6.0",
     "node-sass": "^4.11.0",
+    "raw-loader": "^1.0.0",
     "sass-loader": "^7.1.0",
     "sass-resources-loader": "^2.0.0",
     "style-loader": "^0.23.1",

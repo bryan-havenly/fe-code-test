@@ -1,0 +1,31 @@
+.Root {
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: calc(50% - 10px);
+  max-width: 140px;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  width: 100%;
+
+  a {
+    margin: 0 12px;
+  }
+}
+
+.Pinterest svg {
+  width: 20px;
+
+  path {
+    fill: color(PinterestRed);
+  }
+}
+
+.Instagram svg {
+  width: 24px;
+}
+
+.Person svg {
+  width: 15px;
+}
