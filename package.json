@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/potterbm/fwi-code-challenge.git"
+    "url": "git+https://github.com/havenly/fe-code-test.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/potterbm/fwi-code-challenge/issues"
+    "url": "https://github.com/havenly/fe-code-test/issues"
   },
-  "homepage": "https://github.com/potterbm/fwi-code-challenge#readme",
+  "homepage": "https://github.com/havenly/fe-code-test#readme",
   "dependencies": {
     "axios": "^0.18.0",
     "classnames": "^2.2.6",
