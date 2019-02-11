@@ -18,9 +18,6 @@ export default class DesignerInfo extends PureComponent {
 
   handleFavorite = () => {}
 
-  setPreferredDesigner = () =>
-    this.props.designersActions.setPreferredDesigner(this.props.designer.get('id'));
-
   render() {
     return (
       <div className={ styles.Root }>

@@ -11,14 +11,11 @@ export default class SocialIcons extends PureComponent {
   }
 
   render() {
-    const { designer } = this.props;
-
     return (
       <div className={ styles.Root }>
         <a
           className={ styles.Pinterest }
           dangerouslySetInnerHTML={{ __html: pinterestLogo }}
-          href={ designer.get('pinterest') }
           rel="noopener noreferrer"
           target="_blank"
         />
@@ -26,7 +23,6 @@ export default class SocialIcons extends PureComponent {
         <a
           className={ styles.Instagram }
           dangerouslySetInnerHTML={{ __html: instagramLogo }}
-          href={ designer.get('instagram') }
           rel="noopener noreferrer"
           target="_blank"
         />
@@ -34,7 +30,6 @@ export default class SocialIcons extends PureComponent {
         <a
           className={ styles.Person }
           dangerouslySetInnerHTML={{ __html: blogIcon }}
-          href={ designer.get('blog') }
           rel="noopener noreferrer"
           target="_blank"
         />
