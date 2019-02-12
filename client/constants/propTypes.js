@@ -21,12 +21,13 @@ export const history = PropTypes.shape({
 }).isRequired;
 
 export const designer = ImmutablePropTypes.contains({
+  availability: PropTypes.number,
   created     : ISODatetime,
-  designCount : PropTypes.number,
-  firstName   : PropTypes.string,
+  designPhoto : PropTypes.string,
+  displayName : PropTypes.string,
   // The GraphQL specification requires that ID scalar types are serialized as strings
   id          : PropTypes.string.isRequired,
-  displayName : PropTypes.string,
+  isFavorite  : PropTypes.bool,
   photo       : PropTypes.string,
   vanityId    : PropTypes.string,
 });
