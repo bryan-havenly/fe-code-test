@@ -15,6 +15,7 @@ koaWebpack({ config }).then((webpackMiddleware) => {
   app.use(renderApp());
 });
 
-app.listen(9000);
+app.listen(9000, () => {
+  console.log('Listening on http://localhost:9000');
+});
 
-console.log('Listening on http://localhost:9000');

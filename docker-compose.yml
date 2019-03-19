@@ -1,0 +1,28 @@
+version: '3.2'
+
+services:
+  # db:
+  #   container_name: mysql_test
+  #   image: mysql:5.6
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: root
+  #     MYSQL_DATABASE: be_test
+  #     MYSQL_PASSWORD: root
+  #   expose:
+  #     - "3306"
+  #   ports:
+  #     - "33062:3306"
+  node_graph:
+    build: .
+    container_name: node
+    # depends_on:
+    #   - db
+    volumes:
+      - "${PWD}/client:/app/client:delegated"
+      - "${PWD}/client:/app/public:delegated"
+      - "${PWD}/client:/app/server:delegated"
+      - "${PWD}/package.json:/app/package.json:delegated"
+    entrypoint:
+      - /app/entrypoint.sh
+    ports:
+      - "9000:9000"
