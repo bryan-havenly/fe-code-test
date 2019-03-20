@@ -19,10 +19,10 @@ services:
     #   - db
     volumes:
       - "${PWD}/client:/app/client:delegated"
-      - "${PWD}/client:/app/public:delegated"
-      - "${PWD}/client:/app/server:delegated"
+      - "${PWD}/public:/app/public:delegated"
+      - "${PWD}/server:/app/server:delegated"
       - "${PWD}/package.json:/app/package.json:delegated"
     entrypoint:
       - /app/entrypoint.sh
     ports:
-      - "9000:9000"
+      - "9001:9001"
