@@ -31,3 +31,4 @@ services:
       - /app/entrypoint.sh
     ports:
       - "9001:9001"
+      - "36625:36625" # hot loader websocket

@@ -1,0 +1,44 @@
+.Root {
+  background-color: color(WildSand);
+  display: block;
+  margin: 60px;
+  padding: 40px;
+  position: relative;
+}
+
+.Title {
+  color: collor(Black);
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.Complete {
+  color: color(RoyalBlue);
+  font-size: 10px;
+  line-height: 10px;
+  position: absolute;
+  right: 20px;
+  text-transform: uppercase;
+  top: 40px;
+}
+
+.Paid {
+  color: color(SlateGray);
+  font-size: 10px;
+  line-height: 10px;
+  position: absolute;
+  right: 20px;
+  text-transform: uppercase;
+  top: 55px;
+}
+
+.Boards {
+  align-items: stretch;
+  border-top: 1px solid color(Black, 0.1);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  margin: 20px -20px 0;
+  padding-top: 20px;
+}

@@ -38,3 +38,26 @@ export const designersState = ImmutablePropTypes.contains({
   areLoading : PropTypes.bool.isRequired,
   loaded     : designers.isRequired,
 });
+
+export const board = ImmutablePropTypes.contains({
+  id     : PropTypes.string,
+  name   : PropTypes.string,
+  rating : PropTypes.number,
+});
+
+export const boards = ImmutablePropTypes.listOf(board);
+
+export const room = ImmutablePropTypes.contains({
+  boards,
+  id         : PropTypes.string,
+  isComplete : PropTypes.bool,
+  isPaid     : PropTypes.bool,
+  name       : PropTypes.string,
+});
+
+export const rooms = ImmutablePropTypes.listOf(room);
+
+export const roomsState = ImmutablePropTypes.contains({
+  areLoading : PropTypes.bool.isRequired,
+  loaded     : rooms.isRequired,
+});

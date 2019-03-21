@@ -10,7 +10,10 @@ const app = new Koa();
 app.use(bodyParser());
 app.use(graphqlApi());
 
-koaWebpack({ config }).then((webpackMiddleware) => {
+koaWebpack({
+  config,
+  hotClient : { port : 36625 },
+}).then((webpackMiddleware) => {
   app.use(webpackMiddleware);
   app.use(renderApp());
 });
