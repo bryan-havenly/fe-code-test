@@ -1,0 +1,16 @@
+query {
+  rooms {
+    boards {
+      id
+      name
+      rating
+
+      room { id }
+    }
+
+    id
+    isComplete
+    isPaid
+    name
+  }
+}

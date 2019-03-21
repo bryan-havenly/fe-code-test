@@ -6,9 +6,14 @@ import React, { PureComponent } from 'react';
 import Sort                     from './Sort';
 import styles                   from './styles';
 
-export default getProps('designers')(class Designers extends PureComponent {
+export default getProps('designers', 'designersActions')(class Designers extends PureComponent {
   static propTypes = {
-    designers : appPropTypes.designersState,
+    designers        : appPropTypes.designersState,
+    designersActions : appPropTypes.actions,
+  }
+
+  componentDidMount() {
+    this.props.designersActions.load();
   }
 
   render() {
