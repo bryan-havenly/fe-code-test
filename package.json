@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "knex": "knex --knexfile ./server/db/knexfile.js",
     "start": "NODE_ENV=development node ./server/index.js",
     "test": "jest --no-cache"
   },
@@ -23,9 +24,12 @@
     "graphql": "^14.0.2",
     "graphql-tools": "^4.0.3",
     "immutable": "^4.0.0-rc.12",
+    "knex": "^0.16.3",
+    "knex-stringcase": "^1.1.1",
     "koa": "^2.6.2",
     "koa-bodyparser": "^4.2.1",
     "koa-webpack": "^5.1.1",
+    "mysql2": "^1.6.5",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",

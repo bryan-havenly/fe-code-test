@@ -6,6 +6,7 @@ schema {
 
 type Query {
   designers: [Designer]
+  rooms: [Room]
 }
 
 type Designer {
@@ -18,6 +19,22 @@ type Designer {
   isFavorite: Boolean!
   photo: String!
   vanityId: String!
+}
+
+type Room {
+  boards: [Board]!
+  created: String!
+  id: ID!
+  isComplete: Boolean!
+  isPaid: Boolean!
+  name: String!
+}
+
+type Board {
+  id: ID!
+  name: String!
+  rating: Int!
+  room: Room!
 }
 
 `;

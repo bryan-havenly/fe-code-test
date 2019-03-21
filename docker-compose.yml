@@ -1,22 +1,27 @@
 version: '3.2'
 
 services:
-  # db:
-  #   container_name: mysql_test
-  #   image: mysql:5.6
-  #   environment:
-  #     MYSQL_ROOT_PASSWORD: root
-  #     MYSQL_DATABASE: be_test
-  #     MYSQL_PASSWORD: root
-  #   expose:
-  #     - "3306"
-  #   ports:
-  #     - "33062:3306"
+  test_db:
+    container_name: mysql_test
+    image: mysql:5.6
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: be_test
+    expose:
+      - "3306"
+    ports:
+      - "33062:3306"
+
   node_graph:
     build: .
     container_name: node
-    # depends_on:
-    #   - db
+    environment:
+      DB_HOST: test_db
+      DB_NAME: be_test
+      DB_PASSWORD: root
+      DB_USER: root
+    depends_on:
+      - test_db
     volumes:
       - "${PWD}/client:/app/client:delegated"
       - "${PWD}/public:/app/public:delegated"

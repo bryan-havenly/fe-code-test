@@ -1,5 +1,5 @@
-const designers = require('../data/designers');
+const findAll = require('../helpers/findAll');
 
 module.exports = {
-  designers: () => designers,
+  designers: () => findAll('designers'),
 };
