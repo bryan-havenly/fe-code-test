@@ -12,7 +12,7 @@ services:
     ports:
       - "33062:3306"
 
-  node_graph:
+  node:
     build: .
     container_name: node
     environment:
